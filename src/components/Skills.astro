@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Bypass Firewall</h2>
+		<p>Safely navigate through heavy firewalls for secure and authorized access, maintaining ethical and legal standards.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="game" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>For Gamers</h2>
+		<p>Supercharge your gaming 🚀! Lag-free, secure, and access any game, anywhere. Level up 🎮✨</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Industry Leader</h2>
+		<p>Conqured India Region with 4 Regional Supports: North India, South India, Central India, and Central South India.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="stream" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Streaming Unlocked</h2>
+		<p>Stream in India, anytime with Tony Tunnel VPN! Break free from restrictions. Click to start enjoying now! 🌐📺</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="endless" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Endless Bandwidth</h2>
+		<p>Never stop streaming! Tony Tunnel VPN offers limitless bandwidth. Click for endless entertainment! 🚀</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="tech" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Dark Star Tech</h2>
+		<p>Empower Tony Tunnel to seamlessly integrate Arc Reactor capabilities, elevating the performance of the Tony Tunnel VPN.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://tonytunnel.xyz/sitemap-index.xml

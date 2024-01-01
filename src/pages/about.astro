@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Tony Tunnel" description="About Tony Tunnel">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About Us"
+				tagline="Thanks for stopping by."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Tony Tunnel Studio"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						Welcome to Tony Tunnel VPN, your trusted companion in the world of online security and privacy. At Tony Tunnel VPN, we believe in the power of a secure and open internet for everyone. Our mission is to empower users with the tools they need to browse the web privately, securely, and without restrictions.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Our Pledge to You</h2>
+				<div class="content">
+					<p>
+						At the core of Tony Tunnel VPN is a commitment to your online privacy and security. In an era where digital threats and data breaches are on the rise, we stand as your shield, providing a robust and reliable VPN service that ensures your internet activities remain confidential.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Cutting-Edge Technology</h2>
+				<div class="content">
+					<p>
+						We leverage cutting-edge encryption and tunneling protocols to create a secure virtual tunnel for your data. Whether you're accessing public Wi-Fi, streaming content, or conducting sensitive transactions, Tony Tunnel VPN ensures that your connection is shielded from prying eyes.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">User-Friendly Experience</h2>
+				<div class="content">
+					<p>
+						We understand the importance of simplicity and user-friendliness. Tony Tunnel VPN is designed with you in mind, providing an intuitive interface that allows you to connect to our VPN with just a few clicks. No technical expertise required—just seamless protection.
+					</p>
+					<p>
+						Tony Tunnel VPN is built on a foundation of transparency. We believe in earning your trust by openly sharing information about our practices and policies. Our commitment to transparency ensures that you have full visibility into how we handle your data and maintain your privacy.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Customer Support</h2>
+				<div class="content">
+					<p>
+						Our dedicated support team is here to assist you 24/7. Whether you have questions about installation, troubleshooting, or general inquiries, we're always ready to provide timely and helpful assistance.
+					</p>
+					<p>
+						Choose Tony Tunnel VPN and embark on a journey where your online presence is protected, and your digital rights are respected. Join us in creating a safer, more secure internet for everyone.
+					</p>
+					<p>
+						<br><a href="https://tonytunnel.xyz/">Tony Tunnel VPN</a> - Empowering Your Digital Freedom.
+						<br>Email: <a href="mailto:Contact@tonytunnel.xyz">Contact@tonytunnel.xyz</a>
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
