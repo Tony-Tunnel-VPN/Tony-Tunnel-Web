@@ -1,7 +1,7 @@
 ---
 title: What is Dark Star ?
 publishDate: 2024-01-01 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/stock-2.webp
 img_alt: Dark Star and Tony Tunnel
 description: |
   We paired with a cutting-edge technology Dark Star into Tony Tunnel Technologies.
