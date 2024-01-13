@@ -53,6 +53,6 @@ Tony Tunnel VPN is not just a VPN; it's a technological marvel inspired by the i
 
 🌐*India #1 Free VPN for Windows*
 
-[Download Now](https://tonytunnel.xyz/downloads) | [About](https://tonytunnel.xyz/about) | [Upgrade to Premium](https://tonytunnel.xyz/pricing)
+[Download Now](https://tonytunnel.xyz/download) | [About](https://tonytunnel.xyz/about) | [Upgrade to Premium](https://tonytunnel.xyz/pricing)
 
 ---
